@@ -9,9 +9,15 @@ var				gulp    	= require('gulp'),
 				imagemin    = require('gulp-imagemin'),
 				pngquant    = require('imagemin-pngquant'),
 				autoprefixer= require('gulp-autoprefixer'),
-				nunjucks 	= require('gulp-nunjucks');
+				nunjucks 	= require('gulp-nunjucks'),
+				pug 	    = require('gulp-pug');
 
 				
+gulp.task('pug', function buildHTML() {
+	return gulp.src('app/pugs/*.pug')
+		   .pipe(pug())
+		   .pipe(gulp.dest('app/templates'))
+});
 
 gulp.task('nunjucks', function () {
 	return gulp.src('app/templates/index.html')
@@ -74,13 +80,14 @@ gulp.task('img', function(){
 	.pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('watch', ['browser-sync', 'nunjucks', 'scss', 'js'], function() {
+gulp.task('watch', ['browser-sync', 'pug', 'nunjucks', 'scss', 'js'], function() {
 	gulp.watch('app/scss/**/*.scss', ['scss']);
+	gulp.watch('app/pugs/*.pug', ['pug']);
 	gulp.watch('app/templates/*.html', ['nunjucks']);
 	gulp.watch('app/js/layout/*.js', ['js']);
 });
 
-gulp.task('build', ['clean', 'nunjucks', 'scss', 'img', 'js', 'js-libs'], function() {
+gulp.task('build', ['clean', 'pug', 'nunjucks', 'scss', 'img', 'js', 'js-libs'], function() {
 	var buildIndex = gulp.src('app/index.html')
 	.pipe(gulp.dest('dist'));
 	

@@ -1,0 +1,22 @@
+<svg width="29" height="23" viewBox="0 0 29 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>ic_arrow</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2935 -463)">
+<g id="ic_arrow">
+<g id="Line">
+<use xlink:href="#path0_stroke" transform="matrix(-1 -1.22465e-16 1.22465e-16 -1 -2907.5 484.107)" fill="#98B8F6"/>
+</g>
+<g id="Line">
+<use xlink:href="#path1_stroke" transform="matrix(-1 -1.22465e-16 1.22465e-16 -1 -2909.5 475.5)" fill="#98B8F6"/>
+</g>
+<g id="Line Copy">
+<use xlink:href="#path2_stroke" transform="matrix(-1 -1.22465e-16 1.22465e-16 -1 -2908 475)" fill="#98B8F6"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 1.06066 11.6673L 11.6673 1.06066L 9.54594 -1.06066L -1.06066 9.54594L 1.06066 11.6673Z"/>
+<path id="path1_stroke" d="M 0 2.5L 25 2.5L 25 -0.5L 0 -0.5L 0 2.5Z"/>
+<path id="path2_stroke" d="M -1.06066 1.06066L 9.54594 11.6673L 11.6673 9.54594L 1.06066 -1.06066L -1.06066 1.06066Z"/>
+</defs>
+</svg>

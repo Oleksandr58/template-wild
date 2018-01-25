@@ -1,0 +1,15 @@
+div.header__top
+    a(href="#", title="WILD_"): img.header__logo(src="img/logo.svg", alt="WILD_")
+    nav.header__nav
+        - var nav__items = ["home", "about", "gallery", "journal", "contact"];
+        ul.nav__list
+            for item in nav__items
+                li.nav__item: a(href="#" + item)= item
+            li.nav__item
+                img#search(src="img/search.svg", alt="Search")
+
+div.header__subtitle let your life be an
+h1.header__title adventure
+div.header__btn-wrapper: button.header__btn(type="submit") Get inspired
+
+div.header__skew
