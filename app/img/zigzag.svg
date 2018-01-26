@@ -1,9 +1,9 @@
 <svg width="99" height="18" viewBox="0 0 99 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>img_divider</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(4088 -121)">
+<g id="Canvas" transform="translate(4088 -660)">
 <g id="img_divider">
-<use xlink:href="#path0_fill" transform="translate(-4088 121)" fill="url(#paint0_linear)"/>
+<use xlink:href="#path0_fill" transform="translate(-4088 660)" fill="url(#paint0_linear)"/>
 </g>
 </g>
 <defs>

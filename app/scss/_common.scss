@@ -1,4 +1,19 @@
 body {
-    font-family: "San Francisco Display Medium";
-    color: #C1B2B1;
-  }
+  font-family: "San Francisco Display Medium";
+  color: #C1B2B1;
+}
+
+.sc-title {
+  color: inherit;
+  font-size: 90px;
+  line-height: 85px;
+  text-transform: uppercase;
+  word-break: break-all;
+  z-index: inherit;
+  margin: 20px 0;
+}
+
+.sc-paragraph {
+  font-size: 30px;
+  margin-bottom: 20px;
+}

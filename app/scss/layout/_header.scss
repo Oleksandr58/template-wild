@@ -7,7 +7,8 @@
     background-position: 0;
     position: relative;
     padding-top: 35px;
-
+    padding-bottom: 100px;
+    
     &__nav {
         width: 50%;
     }
@@ -62,24 +63,24 @@
         }
     }
 
-    &__subtitle {
-        margin-top: 130px;
-        margin-bottom: 15px;
+    &__text {
         text-align: center;
-        font-size: 25px;
-        font-family: 'proximanovalight';
         color: white;
-        line-height: 40px;
-        letter-spacing: 8px;
         text-transform: uppercase;
-    }
 
-    &__title {
-        text-align: center;
-        font-size: 100px;
-        color: white;
-        letter-spacing: 8.3px;
-        text-transform: uppercase;
+        &--subtitle {
+            margin-top: 130px;
+            margin-bottom: 15px;
+            font-size: 25px;
+            font-family: 'proximanovalight';       
+            line-height: 40px;
+            letter-spacing: 8px;
+        }
+
+        &--title {       
+            font-size: 100px;
+            letter-spacing: 8.3px;            
+        }
     }
 
     &__btn {        
@@ -113,5 +114,117 @@
         left: 0;
         width: 100%;
         background: white;
+        z-index: 0;
+    }
+
+    .impressive {
+        transform: skewY(-10deg);        
+        position: relative;        
+        color: #4e4e4e;
+        margin-left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        top: -25%;
+
+        &__author {
+            display: flex;
+            align-items: center;
+
+            .author {            
+                &__photo {
+                    background-image: url("../img/Jonathan_Bean.jpg");
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+
+                    .background {
+                        background: rgba($color: #fff, $alpha: 0.7);
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &__name {
+                    color: #9c9c9c;
+                    font-size: 20px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    
+        &__photos {
+            width: 900px;
+            display: inline-block;
+            position: relative;
+            left: -10px;
+            z-index: 0;
+        }
+
+        .caption {
+            width: 350px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            padding-top: 100px;
+        }
+        
+        .photos {
+
+            &__collage {
+                display: inline-block;
+                background-color: white;
+                border: solid 15px #ffffff;
+                box-shadow: 0 30px 30px 0 rgba(140, 153, 191, 0.2);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &--little {                
+                    width: 150px;
+                    height: 150px;
+                    margin: 0 0 10px 10px;
+                }
+
+                &--large {
+                    width: 290px;
+                    height: 390px;
+                }
+            }
+
+            &__block {
+                display: inline-block;
+                width: 400px;
+            }
+
+            &__all {
+                margin-right: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                .all__text {
+                    color: #98b8f6;
+                    font-size: 25px;
+                    margin-right: 20px;
+                }
+
+                .all__text, .all__arrow {                    
+                  cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.svg__circle {
+    filter: drop-shadow(0 40px 5px rgba(100, 100, 100, 0.1));
+    position: absolute;
+    
+    &--header {
+        bottom: 0;
+        right: 50px;
+        transform: translateY(50%);
     }
 }
