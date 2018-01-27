@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
     <title>Wild</title>
@@ -13,12 +13,17 @@
     <header class="header">
       {% include "_header.html" %}
     </header>
-    <section class="about" id="about">
-      {% include "_about.html" %}
-    </section>
-    <section class="gallery" id="gallery">
-      {% include "_gallery.html" %}
-    </section>
+    <div class="skew">
+      <section class="impressive" id="impressive">
+        {% include "_impressive.html" %}
+      </section>
+      <section class="about" id="about">
+        {% include "_about.html" %}
+      </section>
+      <section class="gallery" id="gallery">
+        {% include "_gallery.html" %}
+      </section>
+    </div>
     <section class="journal" id="journal">
       {% include "_journal.html" %}
     </section>

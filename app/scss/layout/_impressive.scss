@@ -1,0 +1,128 @@
+.impressive {
+    transform: skewY(-10deg);        
+    position: relative;        
+    color: #4e4e4e;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    top: -100px;
+
+    &__author {
+        display: flex;
+        align-items: center;
+
+        .author {            
+            &__photo {
+                background-image: url("../img/Jonathan_Bean.jpg");
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+
+                .background {
+                    background: rgba($color: #fff, $alpha: 0.7);
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &__name {
+                color: #9c9c9c;
+                font-size: 20px;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__photos {
+        width: 900px;
+        display: inline-block;
+        position: relative;
+        left: -10px;
+        z-index: 0;
+    }
+
+    .caption {
+        width: 350px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        padding-top: 100px;
+    }
+    
+    .photos {
+
+        &__collage {
+            display: inline-block;
+            background-color: white;
+            border: solid 15px #ffffff;
+            box-shadow: 0 30px 30px 0 rgba(140, 153, 191, 0.2);
+
+            img {
+                width: 100%;
+                height: 100%;
+                transition: transform 0.3s;
+                cursor: pointer;
+            }
+
+            &--little {                
+                width: 150px;
+                height: 150px;
+                margin: 0 0 10px 10px;  
+
+                img:hover {
+                    transform: scale(1.2);
+                }
+            }
+
+            &--large {
+                width: 300px;
+                height: 405px;
+
+                img:hover {
+                    transform: scaleX(1.1) scaleY(1.085);
+                }
+            }
+        }
+
+        &__block {
+            display: inline-block;
+            width: 400px;
+        }
+    }
+}
+
+.more {
+    margin-right: 20px;
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__text {
+        color: #98b8f6;
+        font-size: 25px;
+        margin-right: 20px;
+        transition: all 0.3s;
+    }
+
+    &__text, &__arrow {                    
+        cursor: pointer;
+    }
+
+    &:hover {
+        .more__text {
+            margin-right: 5px;
+        }
+    }
+}
+
+.svg__circle {
+    filter: drop-shadow(0 40px 5px rgba(100, 100, 100, 0.1));
+    position: absolute;
+    
+    &--impressive {
+        top: 50%;
+        right: -30px;
+        transform: translateY(-50%);
+    }
+}

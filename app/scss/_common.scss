@@ -19,3 +19,11 @@ body {
   color: #4e4e4e;
   font-family: 'proximanovalight';
 }
+
+.skew {
+  transform: skewY(10deg);
+  width: 100%;
+  background: white;
+  position: relative;
+  top: -120px;
+}
