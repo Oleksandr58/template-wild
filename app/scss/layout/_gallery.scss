@@ -1,0 +1,56 @@
+.gallery {
+    margin-left: 50px;
+    margin-top: 140px;
+    width: calc(100% - 50px);
+    overflow: hidden;
+
+
+    &__slider {
+        width: 115%;
+        position: relative;
+        overflow: hidden;
+        transform: translateX(-30px);
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+    &__item {
+        display: inline-block; 
+        outline: none;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__figure {        
+        box-shadow: 0 30px 30px 0 rgba(140, 153, 191, 0.3);
+        border: solid 15px #ffffff;
+        width: 300px;
+        padding-bottom: 45px;
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    &__caption {
+        color: #4e4e4e;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__time {
+        color: #9c9c9c;
+        font-size: 20px;
+    }
+
+    .svg__crosses {
+        margin-top: 95px;
+        text-align: center;
+    }
+
+    .more--gallery {
+        margin-right: 100px;
+    }
+}

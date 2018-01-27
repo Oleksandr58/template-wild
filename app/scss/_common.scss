@@ -4,16 +4,18 @@ body {
 }
 
 .sc-title {
-  color: inherit;
   font-size: 90px;
   line-height: 85px;
   text-transform: uppercase;
   word-break: break-all;
   z-index: inherit;
   margin: 20px 0;
+  color: #4e4e4e;
 }
 
 .sc-paragraph {
   font-size: 30px;
   margin-bottom: 20px;
+  color: #4e4e4e;
+  font-family: 'proximanovalight';
 }

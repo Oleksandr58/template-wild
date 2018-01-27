@@ -1,0 +1,30 @@
+.about {
+    margin-top: 400px;
+    margin-left: 50px;
+    width: 50%;
+    position: relative;
+
+    .sc-paragraph {
+        strong {
+            font-family: "San Francisco Display Medium";
+        }
+
+        &--subtitle {
+            font-size: 40px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .svg__square {
+        position: absolute;
+        top: 45%;
+        right: -55%;
+
+        &--little {
+            width: 120px;
+            height: 120px;
+            transform: translate(100%, -70%);
+        }
+    }
+}
